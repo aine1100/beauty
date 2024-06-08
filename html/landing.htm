@@ -1,0 +1,303 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty and makeups</title>
+    <link rel="stylesheet" href="../css/landing.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector('#allProducts');
+  const products = document.querySelectorAll('#product');
+
+  products.forEach(product => {
+    const clone = product.cloneNode(true);
+    container.appendChild(clone);
+  });
+
+  container.addEventListener('animationiteration', () => {
+    const firstProduct = container.querySelector('.product');
+    container.appendChild(firstProduct); 
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const links = document.querySelectorAll('nav ul li a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const menuIcon = document.getElementById("icon");
+  const navLinks = document.getElementById("nav-links");
+
+  menuIcon.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+  });
+});
+
+    </script>
+  </head>
+  <body>
+    <nav>
+      <h1>Stylish</h1>
+      <ul id="nav-links">
+        <li><a href="#contentSection">Home</a></li>
+        <li>
+          <a href="#Services">Services</a>
+        </li>
+        <li>
+          <a href="#aboutus">About</a>
+        </li>
+        <li>
+          <a href="#tips"> Tips </a>
+        </li>
+        <li>
+          <a href="#productsection"> Products </a>
+        </li>
+        <li>
+          <a href="#contactus">Contact</a>
+        </li>
+      </ul>
+      <button>Get started</button>
+
+      <box-icon name="menu" color="#000" id="icon"></box-icon>
+    </nav>
+    <section id="contentSection">
+      <p id="content">
+        Get to know various ways of taking care of your beauty and face through
+        having on the appropriate makeups
+      </p>
+      <button id="inTouch">Get in touch</button>
+    </section>
+    <section id="Services">
+      <h2>Our services</h2>
+      <div class="Boxes">
+        <div class="Boxone">
+          <p id="header">Beauty tips</p>
+          <img
+            src="../images/106767614-beautiful-black-woman-beauty-studio-set.jpg"
+            alt=""
+          />
+          <p>
+            Get to know various ways of taking care to your beauty and then get
+            to know various ways of being good
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+        <div class="BoxTwo">
+          <p id="header">Makeup tips</p>
+          <img
+            src="../images/mascara-shadows-cosmetics-blush-wallpaper-preview.jpg"
+            alt=""
+          />
+          <p>
+            Get to know various ways of taking care to your beauty and then get
+            to know various ways of being good
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+      </div>
+    </section>
+    <section id="tips">
+      <h2>Makeup Tips</h2>
+      <div class="tipsSection">
+        <div class="makeuptips">
+          <img
+            src="../images/Nail-Colour-Selection.jpg.jpeg"
+            alt=""
+          />
+          <p id="tiphead">Nail make up tips</p>
+          <p>
+            Use different ways of keeping your nails well and look good by
+            adding on the different makeups but add on many useful makeups that
+            are use ful to the user and also use different useful ways of
+            keeping yourself cle an and looking good and for the user and enjoy
+            the way that you live and
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+        <div class="makeuptips">
+          <img
+            src="../images/Eye-makeup-HD-picture.jpg"
+            alt=""
+          />
+          <p id="tiphead">Eye make up tips</p>
+          <p>
+            Use different ways of keeping your nails well and look good by
+            adding on the different makeups but add on many useful makeups that
+            are use ful to the user and also use different useful ways of
+            keeping yourself cle an and looking good and for the user and enjoy
+            the way that you live and
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+        <div class="makeuptips">
+          <img
+            src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+            alt=""
+          />
+          <p id="tiphead">Body tips</p>
+          <p>
+            Use different ways of keeping your nails well and look good by
+            adding on the different makeups but add on many useful makeups that
+            are use ful to the user and also use different useful ways of
+            keeping yourself cle an and looking good and for the user and enjoy
+            the way that you live and
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+        <div class="makeuptips">
+          <img
+            src="../images/red-lips-beautiful-woman-beauty-makeup-holding-lipstick-close-up-sexy-young-glamorous-female-model-bright-facial-soft-113126917.webp"
+            alt=""
+          />
+          <p id="tiphead">Lips make up tips</p>
+          <p>
+            Use different ways of keeping your nails well and look good by
+            adding on the different makeups but add on many useful makeups that
+            are use ful to the user and also use different useful ways of
+            keeping yourself cle an and looking good and for the user and enjoy
+            the way that you live and
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+        <div class="makeuptips">
+          <img
+            src="../images/360_F_631108181_D8NQEosIiQdvs6zdaIl86hEfns2WeIHr.jpg"
+            alt=""
+          />
+          <p id="tiphead">Fragarance tips</p>
+          <p>
+            Use different ways of keeping your nails well and look good by
+            adding on the different makeups but add on many useful makeups that
+            are use ful to the user and also use different useful ways of
+            keeping yourself cle an and looking good and for the user and enjoy
+            the way that you live and
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+        <div class="makeuptips">
+          <img
+            src="../images/depositphotos_60842961-stock-photo-makeup-artist-applies-eye-shadow.jpg"
+            alt=""
+          />
+          <p id="tiphead">Eye make up tips</p>
+          <p>
+            Use different ways of keeping your nails well and look good by
+            adding on the different makeups but add on many useful makeups that
+            are use ful to the user and also use different useful ways of
+            keeping yourself cle an and looking good and for the user and enjoy
+            the way that you live and
+          </p>
+          <button id="Readmore">Read more</button>
+        </div>
+      </div>
+    </section>
+    <section id="productsection">
+      <h2>Products</h2>
+    <div id="allProducts">
+      <div id="product">
+        <img
+          src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+        />
+        <p>Perfume</p>
+        <p>$20</p>
+        <button id="Readmore">Add to cart</button>
+
+      </div>
+      <div id="product">
+        <img
+          src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+        />
+        <p>Perfume</p>
+        <p>$20</p>
+        <button id="Readmore">Add to cart</button>
+
+      </div>
+      <div id="product">
+        <img
+          src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+        />
+        <p>Perfume</p>
+        <p>$20</p>
+        <button id="Readmore">Add to cart</button>
+
+      </div>
+      <div id="product">
+        <img
+          src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+        />
+        <p>Perfume</p>
+        <p>$20</p>
+        <button id="Readmore">Add to cart</button>
+
+      </div>
+      <div id="product">
+        <img
+          src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+        />
+        <p>Perfume</p>
+        <p>$20</p>
+        <button id="Readmore">Add to cart</button>
+
+      </div>
+      <div id="product">
+        <img
+          src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+        />
+        <p>Perfume</p>
+        <p>$20</p>
+        <button id="Readmore">Add to cart</button>
+
+      </div>
+    </div>
+    </section>
+    <section id="aboutus">
+      <h2>About Us</h2>
+      <div class="aboutinfo">
+        <p>this is our worldwide day interaction of website and enjoy day to day tips
+          of our actions and enjoy the different ways that we ive in our wonderful an
+          d exciting world dont be sad about our daily infomation and get different 
+          ways of taking care of your skin make it clean and looking it good and don
+          t be sad to be clalled so as to be happy in the day to day actions dont be s
+          and enjoy day to day actions of the different way of living od the day to da
+          y actions dont dare to be very crucial ways of enjoying my day to day future
+          actions and get it </p>
+          <img src="../images/pexels-photo-3762466.webp" alt="">
+      </div>
+    </section>
+    <section id="contactus">
+      <h2>Contact Us</h2>
+      <form action="">
+        <fieldset>
+          <label for="username">Enter your name</label><br/>
+          <input type="text" id="username"><br/>
+          
+          <label for="email">Enter your email</label><br/>
+          <input type="email" id="email"><br/>
+          <label for="message">Enter your message</label><br/>
+          <textarea name="text" id="text"></textarea><br/>
+          <button id="submit">Submit</button>
+        </fieldset>
+      </form>
+
+    </section>
+    <footer>
+      <p>&copy;2024 stylish</p>
+    </footer>
+  </body>
+</html>

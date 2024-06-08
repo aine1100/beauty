@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty and Makeups</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+        .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    #mascaraimage {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+  </style>
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a class="text-red-300 text-xl font-semibold" href="#">Stylish</a>
+      <button class="block lg:hidden text-gray-500" type="button" id="navbar-toggler">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="hidden lg:flex lg:items-center lg:space-x-4  flex-wrap">
+        <a class="text-red-300" href="#">Home</a>
+        <a class="text-red-300" href="#">Services</a>
+        <a class="text-red-300" href="#">Beauty Tips</a>
+        <a class="text-red-300" href="#">Makeup Tips</a>
+        <a class="text-red-300" href="#">About</a>
+        <a class="text-red-300" href="#contact">Contact</a>
+        <button class="border- border-red-300  text-red-300 py-2 px-4 rounded w-30 h-10 bg-white">Get Started</button>
+      </div>
+    </div>
+    <div class="hidden lg:flex lg:items-center lg:space-x-4 px-6 lg:px-0" id="navbar-links">
+      <a class="text-red-500 block lg:hidden py-2" href="#">Home</a>
+      <a class="text-red-500 block lg:hidden py-2" href="#">Services</a>
+      <a class="text-red-500 block lg:hidden py-2" href="#">Beauty Tips</a>
+      <a class="text-red-500 block lg:hidden py-2" href="#">Makeup Tips</a>
+      <a class="text-red-500 block lg:hidden py-2" href="#">About</a>
+      <a class="text-red-500 block lg:hidden py-2" href="#contact">Contact</a>
+      <a class="btn btn-outline-danger border border-red-300 text-red-300 py-2 px-4 rounded block lg:hidden" href="#" role="button">Get Started</a>
+    </div>
+  </nav>
+  <section id="contentSection" class="flex flex-col items-center justify-center w-full h-128 bg-cover bg-center py-10" style="background-image: url('../../images/pngtree-beauty-makeup-3d-black-mascara-cosmetics-pink-background-picture-image_1177356.jpg');">
+    <p id="content" class="text-center mb-4">
+      Get to know various ways of taking care of your beauty and face through having on the appropriate makeups
+    </p>
+    <button id="inTouch" class="bg-pink-400 text-white py-2 px-4 rounded">Get in touch</button>
+  </section>
+  
+  
+  <div class="container mx-auto py-12 bg-gray-100">
+    <h2 class="text-center text-2xl font-semibold mb-8">Our Services</h2>
+    <div class="flex flex-wrap justify-center">
+      <div class="w-full lg:w-1/3 md:w-1/2 px-4 mb-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full text-center">
+          <img src="../../images/106767614-beautiful-black-woman-beauty-studio-set.jpg" class="w-full h-auto" alt="Beauty Tips">
+          <div class="p-6">
+            <h5 class="text-lg font-semibold mb-2">Beauty Tips</h5>
+            <p class="text-gray-700 mb-4 ">Get to know various ways of taking care of your beauty and then get to know various ways of being good</p>
+            <button class="bg-red-300 text-white py-2 px-4 rounded">Read more <box-icon name="right-arrow-alt"></box-icon></button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/3 md:w-1/2 px-4 mb-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full text-center">
+          <img src="../../images/mascara-shadows-cosmetics-blush-wallpaper-preview.jpg" class="w-full h-auto" alt="Makeup Tips">
+          <div class="p-6">
+            <h5 class="text-lg font-semibold mb-2">Makeup Tips</h5>
+            <p class="text-gray-700 mb-4">Get to know various ways of taking care of your beauty and then get to know various ways of being good</p>
+            <button class="bg-red-300 text-white py-2 px-4 rounded">Read more <box-icon name="right-arrow-alt"></box-icon></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto py-12 no-scrollbar">
+    <h2 class="text-center text-2xl font-semibold mb-8">Makeup Tips</h2>
+    <div class="tipsSection flex flex-wrap justify-center items-center gap-5">
+      <div class="makeuptips w-80 h-96 text-center bg-white shadow-md p-5 text-sm">
+          <img src="../images/Nail-Colour-Selection.jpg.jpeg" alt="" class="rounded-full w-24 h-24 mx-auto" />
+          <p class="text-2xl font-bold text-pink-500">Nail make up tips</p>
+          <p>
+              Use different ways of keeping your nails well and look good by
+              adding on the different makeups but add on many useful makeups that
+              are useful to the user and also use different useful ways of
+              keeping yourself clean and looking good and for the user and enjoy
+              the way that you live and
+          </p>
+          <button class="bg-red-300 text-white py-2 px-4 mt-4 rounded-sm">Read more</button>
+      </div>
+      <div class="makeuptips w-80 h-96 text-center bg-white shadow-md p-5 text-sm">
+          <img src="../images/Eye-makeup-HD-picture.jpg" alt="" class="rounded-full w-24 h-24 mx-auto" />
+          <p class="text-2xl font-bold text-pink-500">Eye make up tips</p>
+          <p>
+              Use different ways of keeping your nails well and look good by
+              adding on the different makeups but add on many useful makeups that
+              are useful to the user and also use different useful ways of
+              keeping yourself clean and looking good and for the user and enjoy
+              the way that you live and
+          </p>
+          <button class="bg-red-300 text-white py-2 px-4 mt-4 rounded-sm">Read more</button>
+
+      </div>
+      <div class="makeuptips w-80 h-96 text-center bg-white shadow-md p-5 text-sm">
+          <img src="../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg" alt="" class="rounded-full w-24 h-24 mx-auto" />
+          <p class="text-2xl font-bold text-pink-500">Body tips</p>
+          <p>
+              Use different ways of keeping your nails well and look good by
+              adding on the different makeups but add on many useful makeups that
+              are useful to the user and also use different useful ways of
+              keeping yourself clean and looking good and for the user and enjoy
+              the way that you live and
+          </p>
+          <button class="bg-red-300 text-white py-2 px-4 mt-4 rounded-sm">Read more</button>
+      </div>
+      <div class="makeuptips w-80 h-96 text-center bg-white shadow-md p-5 text-sm">
+          <img src="../images/red-lips-beautiful-woman-beauty-makeup-holding-lipstick-close-up-sexy-young-glamorous-female-model-bright-facial-soft-113126917.webp" alt="" class="rounded-full w-24 h-24 mx-auto" />
+          <p class="text-2xl font-bold text-pink-500">Lips make up tips</p>
+          <p>
+              Use different ways of keeping your nails well and look good by
+              adding on the different makeups but add on many useful makeups that
+              are useful to the user and also use different useful ways of
+              keeping yourself clean and looking good and for the user and enjoy
+              the way that you live and
+          </p>
+          <button class="bg-red-300 text-white py-2 px-4 mt-4 rounded-sm">Read more</button>
+
+      </div>
+      <div class="makeuptips w-80 h-96 text-center bg-white shadow-md p-5 text-sm">
+          <img src="../images/360_F_631108181_D8NQEosIiQdvs6zdaIl86hEfns2WeIHr.jpg" alt="" class="rounded-full w-24 h-24 mx-auto" />
+          <p class="text-2xl font-bold text-pink-500">Fragrance tips</p>
+          <p>
+              Use different ways of keeping your nails well and look good by
+              adding on the different makeups but add on many useful makeups that
+              are useful to the user and also use different useful ways of
+              keeping yourself clean and looking good and for the user and enjoy
+              the way that you live and
+          </p>
+          <button class="bg-red-300 text-white py-2 px-4 mt-4 rounded-sm">Read more</button>
+
+      </div>
+      <div class="makeuptips w-80 h-96 text-center bg-white shadow-md p-5 text-sm">
+          <img src="../images/depositphotos_60842961-stock-photo-makeup-artist-applies-eye-shadow.jpg" alt="" class="rounded-full w-24 h-24 mx-auto" />
+          <p class="text-2xl font-bold text-pink-500">Eye make up tips</p>
+          <p>
+              Use different ways of keeping your nails well and look good by
+              adding on the different makeups but add on many useful makeups that
+              are useful to the user and also use different useful ways of
+              keeping yourself clean and looking good and for the user and enjoy
+              the way that you live and
+          </p>
+          <button class="bg-red-300 text-white py-2 px-4 mt-4 rounded-sm">Read more</button>
+
+      </div>
+  </div>
+  
+  </div>
+
+  <section id="productsection" class="text-center py-10">
+    <h2 class="text-2xl font-bold mb-6">Products</h2>
+    <div id="allProducts" class="flex flex-nowrap overflow-hidden justify-center items-center gap-12">
+      <div id="product" class="p-2 w-48 h-60 bg-white shadow-md rounded-md animate-slide">
+        <img
+          src="../../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+          class="rounded"
+        />
+        <p class="mt-2">Perfume</p>
+        <p class="text-lg font-semibold">$20</p>
+        <button id="Readmore" class="mt-2 py-1 px-4 bg-red-300 text-white rounded">Add to cart</button>
+      </div>
+      <div id="product" class="p-2 w-48 h-60 bg-white shadow-md rounded-md animate-slide">
+        <img
+          src="../../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+          class="rounded"
+        />
+        <p class="mt-2">Perfume</p>
+        <p class="text-lg font-semibold">$20</p>
+        <button id="Readmore" class="mt-2 py-1 px-4 bg-red-300 text-white rounded">Add to cart</button>
+      </div>
+      <div id="product" class="p-2 w-48 h-60 bg-white shadow-md rounded-md animate-slide">
+        <img
+          src="../../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+          class="rounded"
+        />
+        <p class="mt-2">Perfume</p>
+        <p class="text-lg font-semibold">$20</p>
+        <button id="Readmore" class="mt-2 py-1 px-4 bg-red-300 text-white rounded">Add to cart</button>
+      </div>
+      <div id="product" class="p-2 w-48 h-60 bg-white shadow-md rounded-md animate-slide">
+        <img
+          src="../../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+          class="rounded"
+        />
+        <p class="mt-2">Perfume</p>
+        <p class="text-lg font-semibold">$20</p>
+        <button id="Readmore" class="mt-2 py-1 px-4 bg-red-300 text-white rounded">Add to cart</button>
+      </div>
+      <div id="product" class="p-2 w-48 h-60 bg-white shadow-md rounded-md animate-slide">
+        <img
+          src="../../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+          class="rounded"
+        />
+        <p class="mt-2">Perfume</p>
+        <p class="text-lg font-semibold">$20</p>
+        <button id="Readmore" class="mt-2 py-1 px-4 bg-red-300 text-white rounded">Add to cart</button>
+      </div>
+      <div id="product" class="p-2 w-48 h-60 bg-white shadow-md rounded-md animate-slide">
+        <img
+          src="../../images/lovepik-beauty-and-body-care-water-film-picture_500724882.jpg"
+          alt=""
+          class="rounded"
+        />
+        <p class="mt-2">Perfume</p>
+        <p class="text-lg font-semibold">$20</p>
+        <button id="Readmore" class="mt-2 py-1 px-4 bg-red-300 text-white rounded">Add to cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="aboutus" class="text-center py-10">
+    <h2 class="text-2xl font-bold mb-6">About Us</h2>
+    <div class="aboutinfo flex flex-wrap gap-24 justify-center items-center p-5">
+      <p class="w-2/3 max-w-2xl">
+        This is our worldwide day interaction of website and enjoy day to day tips
+        of our actions and enjoy the different ways that we live in our wonderful and
+        exciting world. Don't be sad about our daily information and get different 
+        ways of taking care of your skin, make it clean and looking good. Don't be sad
+        to be called so as to be happy in the day-to-day actions. Don't be sad, enjoy 
+        day-to-day actions of the different ways of living the day-to-day actions. Don't 
+        dare to be very crucial ways of enjoying my day-to-day future actions and get it.
+      </p>
+      <img src="../images/pexels-photo-3762466.webp" alt="" class="w-72 h-88 rounded-lg">
+    </div>
+  </section>
+  
+  <section id="contactus" class="text-center py-10">
+    <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+    <form action="" class="flex justify-center">
+      <fieldset class="border border-pink-300 p-4 rounded-lg w-max">
+        <label for="username" class="text-sm block mb-2">Enter your name</label>
+        <input type="text" id="username" class="w-72 h-5 outline-none border border-dashed border-pink-300 rounded mb-4 p-1">
+        
+        <label for="email" class="text-sm block mb-2">Enter your email</label>
+        <input type="email" id="email" class="w-72 h-5 outline-none border border-dashed border-pink-300 rounded mb-4 p-1">
+        
+        <label for="message" class="text-sm block mb-2">Enter your message</label>
+        <textarea name="text" id="text" class="w-72 h-24 outline-none border border-dashed border-pink-300 rounded mb-4 p-1"></textarea><br/>
+        
+        <button id="submit" class="bg-pink-300 text-white py-1 px-4 rounded mt-4">Submit</button>
+      </fieldset>
+    </form>
+  </section>
+  
+  <footer class="bg-pink-300 text-white text-center w-full h-12 flex items-center justify-center">
+    <p>&copy;2024 Stylish</p>
+  </footer>
+   
+ 
+  <script>
+    document.getElementById('navbar-toggler').addEventListener('click', function() {
+      const navLinks = document.getElementById('navbar-links');
+      navLinks.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

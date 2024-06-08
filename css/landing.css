@@ -1,0 +1,307 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "playfair display",sans-serif;
+}
+nav{
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    position: sticky;
+    top:0;
+    padding:0 100px;
+    background-color: white;
+}
+ul,a{
+    list-style-type: none;
+    display: flex;
+    gap:60px;
+    text-decoration: none;
+    color: black;
+    
+}
+h1{
+    color: pink;
+    font-weight: bold;
+    font-size: 30px;
+}
+ button{
+    border: 1px dashed pink;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+button:hover{
+    background-color: pink;
+    color: white;
+}
+
+#icon{
+    display: none;
+    order: 2;
+}
+
+#contentSection{
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* text-align: center; */
+    background-image: url(../images//pngtree-beauty-makeup-3d-black-mascara-cosmetics-pink-background-picture-image_1177356.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+
+}
+#inTouch,#Readmore{
+    background-color: rgb(230, 156, 168);
+    color: white;
+    border: none;
+}
+#Services h2{
+    text-align: center;
+    padding-top: 30px;
+
+}
+.Boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+}
+.Boxone,.BoxTwo{
+    background-color: white;
+    box-shadow: 1px 2px 3px 3px rgb(202, 200, 200);
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+img{
+    width: 150px;
+    height: 100px;
+}
+#tips{
+    padding: 40px 0;
+
+}
+#tips h2{
+    text-align: center;
+    padding-top: 30px;
+}
+.Boxes #header{
+    font-weight: bold;
+    color: pink;
+    font-size: 20px;
+} 
+
+.tipsSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.makeuptips{
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 3px 2px 3px 4px rgb(202, 200, 200);
+    padding: 10px 20px 5px;
+    font-size: 12px;
+}
+.makeuptips img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+#tiphead{
+    font-size: 20px;
+    font-weight: 800;
+    color: palevioletred;
+}
+#allProducts{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  
+}
+#productsection{
+    text-align: center;
+    padding: 40px 0;
+}
+#product img{
+    border-radius: 5px;
+
+}
+#product{
+    padding: 10px 5px 5px;
+    width: 200px;
+    height: 240px;
+    background-color: white;
+    box-shadow: 0 1px 1px 2px rgb(202, 200, 200);
+    animation: slide 20s linear infinite;
+}
+#aboutus{
+    text-align: center;
+    padding: 40px 0;
+    
+}
+.aboutinfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+.aboutinfo p{
+    width: 650px;
+}
+.aboutinfo img{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+#contactus{
+    text-align: center;
+    padding: 40px 0;
+   
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+fieldset{
+    border: 1px solid palevioletred;
+    width: fit-content;
+    border-radius: 10px;
+    height: 300px;
+
+    
+    
+}
+input[type="text"],input[type="email"],textarea{
+    width: 300px;
+    height: 20px;
+    outline: none;
+    border: 1px dashed palevioletred;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+textarea{
+    height: 100px;
+}
+label{
+    font-size: 15px;
+    padding: 10px;
+}
+#submit{
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+footer{
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+@media (max-width:420px) {
+    ul ,nav{
+        flex-direction: column;
+    }
+    nav ul.active {
+        display: flex;
+        flex-wrap: wrap
+    
+      }
+ #content{
+    font-size: 13px;
+ }    
+ 
+ .Boxone,.BoxTwo{
+    width: 300px;
+    justify-content: center;
+
+ }
+ 
+ 
+  
+}
+@media (max-width:787px) {
+    nav h1,nav #icon{
+        display: block;
+    }
+  ul, nav button{
+    display: none;
+  }  
+  nav ul.active {
+    display: block;
+    
+  }
+  
+  #intouch{
+    display: block;
+
+  }
+  
+  .Boxone,.BoxTwo{
+    justify-content: center;
+
+  }
+  
+}
+@media (max-width:1024px) {
+nav{
+    gap:10px;
+    
+}    
+ul{
+    gap: 15px;
+
+}
+#intouch{
+    display: block;
+
+  }
+  
+
+}
